@@ -3,10 +3,25 @@
 
 ## Repository Contents
 * [Introduction to Ruby Solutions]
-* [blackjack](#blackjack.rb)
-* [calculator](#calculator.rb)
-* [paper_rock_scissors](#paper_rock_scissors.rb)
-* [Ruby](https://www.ruby-lang.org/en/)
+* [Running Ruby]
+* [Numbers and Strings]
+* [Variables and Objects]
+* [Self in Ruby]
+* [Ruby Classes]
+* [Attributes]
+* [Arrays in Ruby]
+* [Interacting with Objects in Ruby]
+* [Separation of source files in Ruby]
+* [Unit Testing in Ruby]
+* [Conditionals and Test Driven Development in Ruby]
+* [Modules in Ruby]
+* [Blocks and Iterators in Ruby]
+* [Symbols and Structs in Ruby]
+* [Hashes in Ruby]
+* [Custom Iterators in Ruby]
+* [Input and Output in Ruby]
+* [Inheritance in Ruby]
+* [Mixins in Ruby]
 * [Contact](#speedyray2ray@gmail.com)
 
 ## General info
