@@ -1,6 +1,11 @@
 class Player
+
+	attr_reader    :health
+	attr_accessor  :name
+	  
+
 	def initialize(name, health=100)
-		@name = name.capitalize
+		@name = name
 		@health = health
 	end
 
@@ -13,7 +18,11 @@ class Player
 	#      elsif @health == 130
 	# "I'm #{@name.capitalize} with a health of #{@health}"
 	#     end 	
- #    end
+    #    end
+
+    def score
+      @health + @name.length
+    end
 
     def blam
     	@health -=10
@@ -25,26 +34,47 @@ class Player
     	"got w00ted"
     end
 
-    def to_s
-     "I'm #{@name.capitalize} with a health of #{@health}"
+    def name=(new_name)
+       @name = new_name.capitalize
     end
+
+
+    def to_s
+     "I'm #{@name} with a health of #{@health} and a score of #{score}"
+    end
+
+
+
 end
 
 player1 = Player.new("moe")
+# puts player1.inspect
+puts player1.health
+puts player1.score
 puts player1
 
 player2 = Player.new("larry", 60)
+puts player2.score
+player2.name = "lawrence"
+puts player2.name
+puts player2.score
 puts player2
 
+
+
 player3 = Player.new("curly", 125)
+puts player3.health
+puts player3.score
 puts player3
-puts player3.blam
 
-# puts player1.say_hello
-# puts player2.say_hello
 
-player3 = Player.new("curly", 115)
-puts player3
-puts player3.w00t
+
+# puts player3.blam
+# # puts player1.say_hello
+# # puts player2.say_hello
+
+# player3 = Player.new("curly", 115)
+# puts player3
+# puts player3.w00t
 
 
