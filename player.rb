@@ -103,6 +103,67 @@ player4 = Player.new("Shemp", 90)
 players.push(player4)
 puts players
 
+puts "***************************************"
+
+class Game
+     attr_reader :title
+
+	def initialize(title)
+	  @title =title
+	  @players = []
+	end
+
+
+	def add_player(player)
+	  @players << player
+	end
+
+
+	def remove_player(player)
+	  @players.pop
+	end
+
+
+	def clear_player
+	  @players.clear
+	end
+
+
+
+	def play
+		puts "There are #{@players.size} players in #{title}:"
+
+		@players.each do |player|
+			puts player
+		end
+
+		@players.each  do |player|
+		 player.w00t
+		 player.blam
+		 puts player
+		end
+	end
+
+end
+puts "***************************************"
+knuckleheads = Game.new("Knuckleheads")
+knuckleheads.add_player(player1)
+knuckleheads.add_player(player2)
+knuckleheads.add_player(player3)
+puts "***************************************"
+knuckleheads.remove_player(player3)
+knuckleheads.clear_player
+
+
+
+puts "***************************************"
+puts knuckleheads
+puts "***************************************"
+knuckleheads.play
+
+
+
+ 
 
 
 
